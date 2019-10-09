@@ -1,0 +1,19 @@
+﻿using System;
+
+
+namespace ConsoleApp32
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, k;
+            Console.WriteLine("Секунды");
+            n = Convert.ToInt32(Console.ReadLine());
+            k = n % 60;
+            Console.WriteLine("Количество секунд,прошедших с начала последней минуты: " + k);
+            Console.ReadKey();
+
+        }
+    }
+}

@@ -1,0 +1,25 @@
+﻿using System;
+
+
+namespace ConsoleApp29
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, k, o;
+            Console.WriteLine("Введите длину a");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите длину b");
+            b = Convert.ToInt32(Console.ReadLine());
+            k = a / b;
+            o = a - (k * b);
+            Console.WriteLine("Длина незанятой части отрязка a:" + o);
+            Console.ReadKey();
+
+
+            
+
+        }
+    }
+}
