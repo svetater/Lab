@@ -1,0 +1,25 @@
+﻿using System;
+
+
+namespace ConsoleApp25
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double v1, v2, s, t;
+            Console.WriteLine("Скооросто первого равна");
+            v1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Скорость второго равна");
+            v2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Расстояние между ними равно");
+            s = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Время:");
+            t = Convert.ToDouble(Console.ReadLine());
+            s = s + v1 * t + v2 * t;
+            Console.WriteLine("Расстояние после движения равно: " + s);
+            Console.ReadKey();
+
+        }
+    }
+}
