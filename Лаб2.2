@@ -1,0 +1,29 @@
+﻿using System;
+
+
+namespace ConsoleApp10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x1, x2, x3, y1, y2, y3, r1, r2, s;
+            Console.WriteLine("Введите координаты точки А");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите координаты точки В");
+            x2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите координаты точки С");
+            x3 = Convert.ToDouble(Console.ReadLine());
+            r1 = x3 - x1;
+            r2 = x3 - x2;
+            s = r1 + r2;
+            if (r1 < 0) r1 = -r1;
+            if (r2 < 0) r2 = -r2;
+            Console.WriteLine("Расстояние между АС "+ r1);
+            Console.WriteLine("Расстояние между ВС "+ r2);
+            Console.WriteLine("Сумма: "+ s);
+            Console.ReadKey();
+
+        }
+    }
+}

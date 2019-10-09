@@ -1,0 +1,29 @@
+﻿using System;
+
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x1, x2, y1, y2, p, s, a, b;
+            Console.WriteLine("Введите координаты первой точки");
+            x1 = Convert.ToInt32(Console.ReadLine());
+            y1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите координаты второй точки");
+            x2 = Convert.ToInt32(Console.ReadLine());
+            y2 = Convert.ToInt32(Console.ReadLine());
+            a = y2 - y1;
+            b = x2 - x1;
+            if (a < 0) a = -a;
+            if (b < 0) b = -b;
+            p = (a + b) * 2;
+            s = a * b;
+            Console.WriteLine("Периметр прямоугольника равен: " + p);
+            Console.WriteLine("Площадь прямоугольника равна: " + s);
+            Console.ReadKey();
+
+        }
+    }
+}
