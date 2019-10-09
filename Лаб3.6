@@ -1,0 +1,20 @@
+﻿using System;
+
+
+namespace ConsoleApp20
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, a1;
+            Console.WriteLine("Введите число а");
+            a = Convert.ToInt32(Console.ReadLine());
+            a1 = Math.Pow(a, 4);
+            a = a1 * a * (Math.Pow(a, 3));
+            Console.WriteLine("a^8=" + a);
+            Console.ReadLine();
+
+        }
+    }
+}

@@ -1,0 +1,33 @@
+﻿using System;
+
+
+namespace ConsoleApp16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c, c1, b1;
+            Console.WriteLine("Введите число а");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число в");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число с");
+            c = Convert.ToInt32(Console.ReadLine());
+            b1 = b;
+            c1 = c;
+            b = a;
+            c = b1;
+            a = c1;
+            Console.WriteLine("а=" + a);
+            Console.WriteLine("в=" + b);
+            Console.WriteLine("с=" + c);
+            Console.ReadKey();
+
+
+
+
+
+        }
+    }
+}
