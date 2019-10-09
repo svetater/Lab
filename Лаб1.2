@@ -1,0 +1,19 @@
+﻿using System;
+
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int d;
+            double l, p=3.14;
+            Console.WriteLine("Введите диаметр");
+            d = Convert.ToInt32(Console.ReadLine());
+            l = d * p;
+            Console.WriteLine("\nДлина окружности равна " + l);
+            Console.ReadKey();
+        }
+    }
+}

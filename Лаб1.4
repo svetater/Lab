@@ -1,0 +1,30 @@
+﻿using System;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            double r, p, s, h;
+            Console.WriteLine("Введите первое число");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nВведите второе число");
+            b = Convert.ToInt32(Console.ReadLine());
+            a = a * a;
+            b = b * b;
+            r = a - b;
+            s = a + b;
+            p = a * b;
+            h = a / b;
+            Console.WriteLine("\nРазность чисел равна "+ r);
+            Console.WriteLine("\nСумма чисел равна "+ s);
+            Console.WriteLine("\nПроизведение чисел равно "+ p);
+            Console.WriteLine("\nЧастное чисел равно "+ h);
+            Console.ReadKey();
+
+
+        }
+    }
+}
